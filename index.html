@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compound Interest</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Compound Interest Calculator</h1>
+    </header>
+    <section>
+        <div class="div_boxes">
+            <span class="text_span">Start amount</span>
+            <input class="input_values" id="start_amount" type="number" placeholder="0,00">
+        </div>
+        <div class="div_boxes">
+            <span class="text_span">Monthly amount</span>
+            <input class="input_values" id="monthly_amount" type="number" placeholder="0,00">
+        </div>
+        <div class="div_boxes">
+            <span class="text_span">Interest rate</span>
+            <input class="input_values" id="rate" type="number" placeholder="0,00">
+        </div>
+        <div class="div_boxes">
+            <span class="text_span">Time</span>
+            <input class="input_values" id="time" type="number" placeholder="0">
+        </div>
+        <br>
+        <button class="bottons" onclick="calculate()">Calculate</button>
+        <button class="bottons" onclick="reset(['start_amount', 'monthly_amount', 'rate', 'time'])">Clear</button>
+
+        <div id="div_end">
+            <h2 id="end_amount"></h2>
+        </div>
+    </section>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
